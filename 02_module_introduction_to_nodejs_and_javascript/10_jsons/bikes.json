@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "marca": "Fierce",
+    "modelo": "FM18SI29AM211",
+    "rodado": 29,
+    "año": 2021,
+    "color": "Negro",
+    "peso": 15,
+    "tipo": "Montañera",
+    "precio": 3500,
+    "vendida": false
+  },
+  {
+    "id": 2,
+    "marca": "Shifter",
+    "modelo": "Regal",
+    "rodado": 28,
+    "año": 2019,
+    "color": "Rojo",
+    "peso": 13,
+    "tipo": "Paseo",
+    "precio": 2500,
+    "vendida": true
+  },
+  {
+    "id": 3,
+    "marca": "Olmo",
+    "modelo": "Sunshine",
+    "rodado": 26,
+    "año": 2022,
+    "color": "Celeste",
+    "peso": 16,
+    "tipo": "Paseo",
+    "precio": 2800,
+    "vendida": false
+  },
+  {
+    "id": 4,
+    "marca": "Battle",
+    "modelo": "FM18F29AM210",
+    "rodado": 29,
+    "año": 2020,
+    "color": "Gris",
+    "peso": 17,
+    "tipo": "Montañera",
+    "precio": 3100,
+    "vendida": true
+  },
+  {
+    "id": 5,
+    "marca": "TopMega",
+    "modelo": "Ruta",
+    "rodado": 28,
+    "año": 2022,
+    "color": "Amarillo",
+    "peso": 15,
+    "tipo": "Triatlón",
+    "precio": 4000,
+    "vendida": false
+  },
+  {
+    "id": 6,
+    "marca": "SLP",
+    "modelo": "FM18SI29AM211",
+    "rodado": 29,
+    "año": 2021,
+    "color": "Verde",
+    "peso": 16,
+    "tipo": "Montañera",
+    "precio": 3600,
+    "vendida": false
+  },
+  {
+    "id": 7,
+    "marca": "Halley",
+    "modelo": "Techno",
+    "rodado": 16,
+    "año": 2020,
+    "color": "Naranja",
+    "peso": 13,
+    "tipo": "Paseo",
+    "precio": 1800,
+    "vendida": true
+  },
+  {
+    "id": 8,
+    "marca": "Fixie",
+    "modelo": "FM18F29AM210",
+    "rodado": 29,
+    "año": 2022,
+    "color": "Rosa",
+    "peso": 15,
+    "tipo": "Retro",
+    "precio": 3200,
+    "vendida": false
+  }
+]
