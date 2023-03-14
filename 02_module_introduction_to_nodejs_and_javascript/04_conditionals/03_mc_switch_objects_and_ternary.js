@@ -49,7 +49,7 @@ const translator = {
   }
 } */
 
-// Using ternary operator, solution 1, it has a bug: doesn't return anything if the word doesn't exist.
+// Using ternary operator, solution 1, it has a bug: it returns undefined if the word doesn't exist.
 /* typeof userWord === 'string' ? console.log(translator[userWord.toLowerCase()]) : console.log('La palabra ingresada es incorrecta'); */
 
 // Using ternary operator, solution 2, bug fixed.

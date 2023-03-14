@@ -53,34 +53,34 @@ if (typeof operation === 'string') {
     result ??
       'Las operaciones aceptadas son: sumar - restar - multiplicar - dividir'
   );
-} */
-
+}
+ */
 // Solution 3, using a function to reuse the result message <3 <3
 const num1 = 2;
 const num2 = 2;
-const operation = 'multiplicar';
+const operation = "multiplicar";
 
 const calculator = {
-  sumar: showResult(operation, num1, num2, num1 + num2),
+  sumar: () => showResult(operation, num1, num2, num1 + num2),
   restar: showResult(operation, num1, num2, num1 - num2),
   multiplicar: showResult(operation, num1, num2, num1 * num2),
   dividir: showResult(operation, num1, num2, num1 / num2),
 };
 
-if (typeof operation === 'string') {
-  const result = calculator[operation.toLowerCase()];
+if (typeof operation === "string") {
+  const result = calculator[operation.toLowerCase()]();
   console.log(
     result ??
-      'Las operaciones aceptadas son: sumar - restar - multiplicar - dividir'
+      "Las operaciones aceptadas son: sumar - restar - multiplicar - dividir"
   );
 }
 
 function showResult(operation, num1, num2, result) {
   const operator = {
-    sumar: '+',
-    restar: '-',
-    multiplicar: '*',
-    dividir: '/',
+    sumar: "+",
+    restar: "-",
+    multiplicar: "*",
+    dividir: "/",
   };
   return `El resultado de ${operation} ${num1} ${operator[operation]} ${num2} es ${result}`;
 }

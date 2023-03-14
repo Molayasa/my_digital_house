@@ -9,10 +9,11 @@
  * E. Si se especifica un valor diferente a la variable perfil entonces se debe mostrar este mensaje: “Debe especificar un perfil válido”.
  */
 
+// Version 1
+/* 
 const profile = null;
 
-// Version 1
-/* switch (profile) {
+switch (profile) {
   case '':
     console.log('Debe especificar el perfil del usuario');
     break;
@@ -38,21 +39,25 @@ const profile = null;
 } */
 
 // Version 2
-switch (profile?.toLowerCase()) {
-  case !profile:
-    console.log('Debe especificar el perfil del usuario');
-    break;
-  case 'administrador':
-    console.log('Usted tiene todos los privilegios de uso del sistema');
-    break;
-  case 'asistente':
-    console.log(
-      'Usted sólo tiene permisos de registrar, modificar y consultar datos'
-    );
-    break;
-  case 'invitado':
-    console.log('Usted sólo tiene permisos de consultar datos');
-    break;
-  default:
-    console.log('Debe especificar un perfil válido');
+const profile = null;
+
+if (typeof profile === "string") {
+  switch (profile.toLowerCase()) {
+    case !profile:
+      console.log("Debe especificar el perfil del usuario");
+      break;
+    case "administrador":
+      console.log("Usted tiene todos los privilegios de uso del sistema");
+      break;
+    case "asistente":
+      console.log(
+        "Usted sólo tiene permisos de registrar, modificar y consultar datos"
+      );
+      break;
+    case "invitado":
+      console.log("Usted sólo tiene permisos de consultar datos");
+      break;
+    default:
+      console.log("Debe especificar un perfil válido");
+  }
 }
