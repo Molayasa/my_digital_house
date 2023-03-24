@@ -1,0 +1,228 @@
+<!-- 
+  Para eso, debemos escribir, en el archivo index.html, la etiqueta necesaria para crear un formulario, aclarando dos de sus atributos esenciales:
+  El atributo method que indique POST como valor.
+  El atributo action que indique resultado.html como valor.
+-->
+
+<html>
+  <head>
+    <title>Primer formulario</title>
+  </head>
+  <body>
+   <form action="resultado.html" method="POST">
+
+   </form>
+  </body>
+</html>
+
+<!-- 
+  Queremos que exista un campo dentro del formulario para que el usuario pueda ingresar su nombre. Para eso, debemos agregar dos etiquetas dentro del formulario:
+    La etiqueta <label> para informarle al usuario que debe ingresar su nombre. La misma deberá tener el atributo for con el valor nombre.
+    La etiqueta <input> con atributo type con el valor text (para que el usuario pueda ingresar su nombre) y el atributo id con el valor nombre. Por último, también debemos declarar el atributo name con el valor nombre ya que si este atributo no figura, no se enviará el campo como resultado.
+
+    Recordemos que si están bien configurados los atributos for de la etiqueta <label> y el atributo id de la etiqueta <input>, al hacer click en el <label>, el cursor para escribir se posicionará automáticamente en el <input> relacionado.
+-->
+
+<html>
+  <head>
+    <title>Campos en el formulario</title>
+  </head>
+  <body>
+    <form action="resultado.html" method="POST">
+    <label for="nombre">Nombre:</label>
+<input type="text" name="nombre" id="nombre">
+    </form>
+  </body>
+</html>
+
+<!-- 
+Queremos agregar tres campos para que el usuario pueda ingresar un nombre, un e-mail y una contraseña. Deberemos usar las siguientes etiquetas:
+
+  Una etiqueta <input> para que el usuario ingrese su nombre.
+  Una etiqueta <input> para que el usuario ingrese su e-mail.
+  Una etiqueta <input> para que el usuario ingrese su contraseña.
+  Una etiqueta <label> para cada uno de los <input>.
+
+Los tres <input> deberán tener el atributo name declarado, con los valores nombre, email y password para que la información efectivamente viaje al enviar el formulario. 
+
+Atención: en el index.html ya están listas las etiquetas de párrafo para escribir en ellas cada uno de los campos y así visualizar el formulario más prolijo en el navegador.
+-->
+
+<html>
+
+<head>
+	<title>Formulario de registro</title>
+</head>
+
+<body>
+	<form action="resultado.html" method="POST">
+		<p>
+			<label for="nombre">Nombre:</label>
+      <input type="text" name="nombre" id="nombre">
+      </p>
+
+      <p>
+       <label for="email">Email:</label>
+       <input type="email" name="email" id="email">
+      </p>
+      
+      <p>
+      <label for="password" Password:</label>
+      <input type="password" name="password" id="password">
+      </p>
+    </form>
+  </body>
+</html>
+
+<!-- 
+ Para este ejercicio tenemos un formulario ya definido que está casi completo. Queremos agregar algo fundamental que le está faltando: un botón que diga "ENVIAR" para que el usuario pueda, efectivamente, enviar sus datos.
+
+Atención: ya dejamos lista la etiqueta de párrafo para escribir en ella el campo para el botón y así visualizar el formulario más prolijo en el navegador.
+
+-->
+
+<html>
+  <head>
+    <title>Formulario de registro</title>
+  </head>
+  <body>
+    <form action="resultado.html" method="POST">
+      <p>
+        <label>Nombre:</label>
+        <input type="text" name="nombre" required>
+      </p>
+
+      <p>
+        <label>E-mail:</label>
+        <input type="email" name="email" required>
+      </p>
+
+      <p>
+        <label>Contraseña:</label>
+        <input type="password" name="password" required>
+      </p>
+
+      <p>
+     <input type="submit" value="ENVIAR"/>
+     </p>
+    </form>
+  </body>
+</html>
+
+<!-- 
+      Para eso, dentro del formulario ya declarado, debemos:
+
+  Crear un <label> con el texto "¿Tenés mascota?".
+  Agregar dos radio-button para darle la opción "Sí" y la opción "No".
+  Configurar el atributo name="mascota" en ambos <input> para que asocie que estamos hablando del mismo campo.
+
+Atención: Para poder averiguar, luego, qué es lo que eligió el usuario, no debemos olvidarnos de agregarle el atributo value a cada <input>.
+-->
+
+<html>
+
+<head>
+	<title>Formularios</title>
+</head>
+
+<body>
+	<form action="resultado.html" method="POST">
+		<label for="text" name="mascota">¿Tenés mascota?</label>
+<input type="radio" name="mascota" value="si">
+<input type="radio" name="mascota" value="no">
+        <input type="submit" value="Enviar">
+    </form>
+  </body>
+</html>
+
+<!-- 
+  Para eso, dentro del formulario ya declarado, debemos:
+   Crear un <label> con el texto "¿Cuáles son tus hobbies?".
+   Crear tres etiquetas <input> de tipo checkbox con las opciones: Pescar, Correr y Yoga.
+   Configurar el atributo name="hobby" a todos los <input> para que asocie que estamos hablando del mismo campo.
+
+Por último, no debemos olvidarnos de agregar el atributo value a cada <input> para poder averiguar luego qué es lo que eligió el usuario.
+-->
+
+<html>
+
+<head>
+	<title>Formularios</title>
+</head>
+
+<body>
+	<form action="resultado.html" method="POST">
+
+		<label for="text" name="hobbies">¿Cuáles son tus hobbies?</label>
+<input type="checkbox" name="hobby" value="Pescar">
+<input type="checkbox" name="hobby" value="Correr">
+<input type="checkbox" name="hobby" value="Yoga">
+
+        <input type="submit" value="Enviar">
+    </form>
+  </body>
+</html>
+
+<!-- 
+  Vamos a crear un pequeño formulario con un desplegable para que el usuario pueda seleccionar el mes de su cumpleaños.
+
+    Para eso, deberemos crear una etiqueta <select> con atributo y valor name="mes". Dentro del <select>, tendremos que crear 12 etiquetas <option>, una por cada mes, aclarando en cada caso el texto que leerá el usuario: Enero, Febrero, Marzo, etc.
+
+    No olvidemos, además, escribir el atibuto value en cada una de las etiquetas <option>. Pero ¡atención!, queremos que, como valor, ese atributo tenga el número del mes al que está representando. Por ejemplo: 1 para Enero, 2 para Febrero, y así...
+-->
+
+<html>
+
+<head>
+	<title>Formularios</title>
+</head>
+
+<body>
+	<form action="resultado.html" method="POST">
+		<label>Elegí el mes de tu cumpleaños</label>
+      <select name="mes" id="mes">
+        <option value= 1 >Enero</option>
+        <option value= 2 >Febrero</option>
+        <option value= 3 >Marzo</option>
+        <option value= 4 >Abril</option>
+        <option value= 5 >Mayo</option>
+        <option value= 6 >Junio</option>
+        <option value= 7 >Julio</option>
+        <option value= 8 >Agosto</option>
+        <option value= 9 >Septiembre</option>
+        <option value= 10 >Octubre</option>
+        <option value= 11 >Noviembre</option>
+        <option value= 12 >Diciembre</option>
+</select>
+        <input type="submit" value="Enviar">
+    </form>
+  </body>
+</html>
+
+<!-- 
+  Queremos saber qué opinan nuestros usuarios.
+
+    Para eso, debemos agregar, en el formulario que ya está declarado, la etiqueta que le permite al usuario escribir un comentario.
+
+    Además, deberemos crear dos etiquetas <button>, configurando el atributo type según corresponda, para que el usuario pueda ver un botón que diga "Enviar" y otro que diga "Borrar", que al hacerle click borre lo que ya escribió.
+-->
+
+<html>
+
+<head>
+	<title>Formularios</title>
+</head>
+
+<body>
+	<form action="resultado.html" method="POST">
+		<label>Dejanos tu comentario</label>
+        <textarea name="text" id="text"></textarea>
+        <button type="reset">
+    <input type="submit" value="Enviar">
+</button>
+<button type="submit">
+  <input type="reset" value="Borrar">
+</button>
+    </form>
+  </body>
+</html>
