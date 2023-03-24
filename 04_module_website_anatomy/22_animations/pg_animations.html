@@ -1,0 +1,137 @@
+<!-- 
+Para este ejercicio contamos con 2 divs, uno abajo del otro, cada uno con un ancho fijo y un color de fondo.
+  Deberemos agregarles las posiciones y reglas de CSS necesarias para que:
+
+  El primer <div> se ubique 20px a la derecha y 30px hacia abajo de su posición original.
+  El segundo <div> se ubique, en relación al body, a 30px de la derecha y a 20px de abajo.
+-->
+
+<html>
+  <head>
+    <title>Position</title>
+  </head>
+  <body>
+    <div class="primero"> Primer DIV</div>
+    <div class="segundo"> Segundo DIV </div>
+  </body>
+</html>
+
+<!-- 
+Me parece haber visto un lindo gatito...
+
+En el index.html brindamos un <div> con dos imágenes adentro. Queremos, usando position, situar el gorrito de navidad justo arriba de la cabeza del gato.
+Para eso, debemos:
+
+A la imagen del gorrito, asignarle un ancho de 120px y ubicarla 70px desde la izquierda de manera absoluta en relación al <div> con clase contenedor.
+A la imagen del gato, ubicarla a 60px hacia abajo de su posición original.
+-->
+
+<html>
+  <head>
+    <title>Position relative-absolute</title>
+  </head>
+  <body>
+    <div class="contenedor">
+        <img class="gato" src="https://bit.ly/2OhSDTE">
+        <img class="gorrito" src="https://assets.digitalhouse.com/content/ar/fs/gorro.jpg">
+    </div>
+  </body>
+</html>
+
+<!-- 
+Tenemos maquetado un sitio que tiene cuatro secciones algo largas y se genera mucho scroll hacia abajo. 
+
+Queremos lograr que la barra de navegación esté siempre visible para que la navegabilidad del sitio sea óptima.
+
+Para eso debemos ubicar al <ul> con clase "nav-bar" de forma fija a 5px del inicio superior del body y asignarle un width del 100%.
+-->
+
+<html>
+  <head>
+    <title>Position Fixed</title>
+  </head>
+  <body>
+    <h2>TARANTINO'S MOVIES</h2>
+    <ul class="nav-bar">
+        <li><a href="#kill-bill">Kill Bill</a></li>
+        <li><a href="#pulp-fiction">Pulp Fiction</a></li>
+        <li><a href="#once-upon">Once Upon a Time In Hollywood</a></li>
+        <li><a href="#reservouir-dogs">Reresvouir Dogs</a></li>
+    </ul>
+
+    <h3 id="kill-bill">Kill Bill</h3>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias nesciunt impedit reiciendis blanditiis? Minima quia doloribus similique consequuntur eos in aperiam enim ad atque tenetur. Fuga soluta perferendis deserunt. Sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam debitis labore similique necessitatibus magni aspernatur. Delectus nobis earum asperiores quam quas, veniam incidunt deserunt repellat laboriosam voluptatem pariatur, quibusdam quos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit tenetur temporibus hic, molestias quidem id quisquam perspiciatis repudiandae! Voluptatibus sequi necessitatibus distinctio corporis asperiores excepturi consequatur magnam inventore reiciendis dicta?
+    </p>
+
+    <h3 id="pulp-fiction">Pulp Fiction</h3>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias nesciunt impedit reiciendis blanditiis? Minima quia doloribus similique consequuntur eos in aperiam enim ad atque tenetur. Fuga soluta perferendis deserunt. Sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam debitis labore similique necessitatibus magni aspernatur. Delectus nobis earum asperiores quam quas, veniam incidunt deserunt repellat laboriosam voluptatem pariatur, quibusdam quos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit tenetur temporibus hic, molestias quidem id quisquam perspiciatis repudiandae! Voluptatibus sequi necessitatibus distinctio corporis asperiores excepturi consequatur magnam inventore reiciendis dicta?
+    </p>
+
+    <h3 id="once-upon">Once Upon a Time In Hollywood</h3>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias nesciunt impedit reiciendis blanditiis? Minima quia doloribus similique consequuntur eos in aperiam enim ad atque tenetur. Fuga soluta perferendis deserunt. Sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam debitis labore similique necessitatibus magni aspernatur. Delectus nobis earum asperiores quam quas, veniam incidunt deserunt repellat laboriosam voluptatem pariatur, quibusdam quos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit tenetur temporibus hic, molestias quidem id quisquam perspiciatis repudiandae! Voluptatibus sequi necessitatibus distinctio corporis asperiores excepturi consequatur magnam inventore reiciendis dicta?
+    </p>
+
+    <h3 id="reservouir-dogs">Reresvouir Dogs</h3>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias nesciunt impedit reiciendis blanditiis? Minima quia doloribus similique consequuntur eos in aperiam enim ad atque tenetur. Fuga soluta perferendis deserunt. Sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam debitis labore similique necessitatibus magni aspernatur. Delectus nobis earum asperiores quam quas, veniam incidunt deserunt repellat laboriosam voluptatem pariatur, quibusdam quos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit tenetur temporibus hic, molestias quidem id quisquam perspiciatis repudiandae! Voluptatibus sequi necessitatibus distinctio corporis asperiores excepturi consequatur magnam inventore reiciendis dicta?
+    </p>
+  </body>
+</html>
+
+<!-- 
+  Tenemos un <article> con dos etiquetas <div> adentro. Queremos que esos dos elementos se superpongan y empezar a jugar con la propiedad z-index.
+
+    Para eso, debemos mover el <div> con clase "amarillo" 20px desde arriba en relación a su posición original. Una vez que hagamos esos pasos, queremos enviar la respuesta para ver el resultado en el navegador. ¿Qué pasó?
+
+Pareciera que la caja roja desapareció, pero no es así. Vayamos con el último paso para resolver el ejercicio:
+
+    Deberemos asignarle la propiedad z-index con valor 10 al <div> con clase "rojo". Recordemos declarar también la propiedad position:relative —sin declarar esto, no podemos utilizar z-index—.
+-->
+
+<html>
+  <head>
+    <title>Z-index</title>
+  </head>
+  <body>
+      <article>
+        <div class="amarillo"></div>
+        <div class="rojo"></div>
+      </article>
+  </body>
+</html>
+
+<!-- 
+  Vamos a generar una transición al modificar el estilo usando código CSS. La idea es transformar este cuadrado en un círculo (border radius 50%). Para esto, debemos escribir, en el archivo style.css, dos reglas: transition y border-radius. Estas deben de ser agregadas al componente en CSS correspondiente.
+-->
+
+<html>
+    <head>
+    <title>Page Title</title>
+    </head>
+    <body>
+        <h1 styles="">Haz que el cuadrado se transforme en círculo</h1>
+        <div class="mi-elemento">
+        </div>
+    </body>
+</html>
+
+<!-- 
+   En el siguiente caso tenemos una animación simple: un círculo que se achica. Pero si ejecutamos el código, vamos a ver que nos faltan algunas reglas de CSS. Las reglas que deberemos agregar son: animation-name y animation-duration. La duración de la animación deberá de ser 1000ms.
+-->
+
+<html>
+    <head>
+    <title>Page Title</title>
+    </head>
+    <body>
+        <h1 styles="">Haz que el cuadrado se transforme en círculo</h1>
+        <div class="mi-elemento">
+        </div>
+    </body>
+</html>
+
+
+

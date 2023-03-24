@@ -1,0 +1,63 @@
+div {
+  width: 100px;
+  border: solid red 1px;
+  padding: 5px;
+  margin: 10px;
+  box-sizing: border-box;
+  }
+
+  /*______________________________________________________________*/
+
+  header {
+    background-color: lightseagreen;
+    color: white;
+    font-size: 28px;
+    border-bottom: solid 3px indigo;
+    padding: 22px;
+    margin-bottom: 15px;
+    text-align: center;
+    box-sizing: border-box;
+    }
+    
+    section {
+    width: 50%;
+    margin-left: 25%;
+    background-color: gainsboro;
+    margin-bottom: 15px;
+    padding-left: 12px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: dashed black 1px;
+    border-radius: 5px;
+    text-align: center;
+    box-sizing: border-box;
+    }
+    
+    footer {
+    background-color: rebeccapurple;
+    color: white;
+    border-top: solid lightseagreen 1px;
+    padding: 12px;
+    height: 40px;
+    text-align: center;
+    box-sizing: border-box;
+    
+    }
+
+    /*______________________________________________________________*/
+
+    .arriba {
+      width: 100%;
+      height: 40vh;  
+      background-color: blueviolet;
+      
+      }
+      
+      .abajo {
+      width: 100%;
+      height: 60vh; 
+      background-color: brown;
+      }
+
+
+    /*______________________________________________________________*/

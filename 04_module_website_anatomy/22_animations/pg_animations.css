@@ -1,0 +1,96 @@
+.primero {
+  position: relative;
+  top: 30px;
+  left: 20px;
+  }
+  div{
+    position: relative;
+  }
+  .segundo {
+      position: absolute;
+      right: 30px;
+      bottom: 20px; 
+  }
+
+  /*_____________________________________________________________________*/
+
+  .contenedor {
+    position: relative;
+    }
+    
+    .gorrito {
+    width: 120px;
+    position: absolute;
+    left: 70px;
+    }
+    
+    .gato {
+    position: relative;
+    top: 60px;
+    }
+
+  /*_____________________________________________________________________*/
+
+    .nav-bar {
+      position: fixed;
+      top: 5px;
+      width: 100%;
+    }
+
+/*_____________________________________________________________________*/
+    .amarillo {
+      position: relative;
+      top: 20px;
+      
+      }
+      
+      .rojo {
+      position: relative;
+      z-index: 10;
+      }  
+
+  /*_____________________________________________________________________*/
+
+  .mi-elemento {
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    transition: border-radius 450ms;
+    
+}
+ 
+.mi-elemento:hover {
+    border-radius: 50%;
+ 
+}
+  
+  /*_____________________________________________________________________*/
+
+
+  .mi-elemento {
+    width: 200px;
+      height: 200px;
+      position: relative;
+      border-radius: 100%;
+      animation-name: achicando;
+      animation-duration: 1000ms;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+  }
+   
+  
+  @keyframes achicando {
+      0% {
+          background-color: salmon;
+      }
+      
+      100% {
+          background-color: peachpuff;
+          height: 100px;
+          width: 100px;
+          opacity: 0.5;
+      }
+  }
+
+
+  /*_____________________________________________________________________*/

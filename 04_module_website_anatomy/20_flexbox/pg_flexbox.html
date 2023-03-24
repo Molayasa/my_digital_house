@@ -1,0 +1,176 @@
+<!-- 
+Queremos jugar un poco con el significado del texto y lograr que se lea de abajo hacia arriba.
+Para eso tenemos que convertir el <div> con clase "frase-cortazar" en un contenedor flex y asignarle la regla necesaria para cambiar la dirección de la frase, para que empiece a leerse desde abajo.
+-->
+
+<html>
+<head>
+  <title>Flexbox</title>
+</head>
+<body>
+  <div class="frase-cortazar">
+      <div class="parte-1">"Las escaleras</div>
+      <div class="parte-2">se suben de frente,</div>
+      <div class="parte-3">pues hacia atrás</div>
+      <div class="parte-4">o de costado</div>
+      <div class="parte-5">resultan particularmente</div>
+      <div class="parte-5">incómodas."</div>
+    </div>
+</body>
+</html>
+
+<!-- 
+¡Afrontemos otro desafío!
+
+Teníamos pensado mostrar una frase clásica en el navegador. Ya tenemos algunas reglas de CSS declaradas, pero la estructura HTML quedó al revés. Nuestro trabajo será invertir el orden de la frase para que se lea correctamente, asignándole una nueva regla de CSS a la clase "frase".
+-->
+
+<html>
+  <head>
+    <title>Flexbox</title>
+  </head>
+  <body>
+    <div class="frase">
+        <p>existo</p>
+        <p>luego</p>
+        <p>Pienso,</p>
+    </div>  
+  </body>
+</html>
+
+<!-- 
+ Nos piden armar una maqueta del sitio para la Superliga Argentina. Por ahora, tenemos una barra de navegación y un logo en el index.html, pero sin mucho diseño. Queremos estilizarla para que todos los elementos estén en una misma línea horizontal.
+-->
+
+<html>
+  <head>
+    <title>Flexbox</title>
+  </head>
+  <body>
+    <div class="nav-bar">
+      <img src="https://bit.ly/2Qy9lB9">
+
+      <ul class="enlaces">
+          <li><a href="">Equipos |</a></li>
+          <li><a href="">Fechas |</a></li>
+          <li><a href="">Árbitros |</a></li>
+          <li><a href="">Directores Técnicos |</a></li>
+          <li><a href="">Tabla promedios |</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
+
+<!-- 
+  Para este ejercicio contamos con un tablero de dardos y queremos, usando reglas de CSS, lograr centrar la X sobre él.
+-->
+
+<html>
+  <head>
+    <title>Flexbox</title>
+  </head>
+  <body>
+
+    <div class="juego-dardos">
+      <img src="https://i.imgur.com/TzuYXUL.png">
+    </div>
+
+  </body>
+</html>
+
+<!-- 
+ Debemos convertir al <ul> con clase "nav-bar" en un contenedor flex para que sus elementos se dispongan uno al lado del otro.
+-->
+
+<html>
+  <head>
+    <title>Flexbox</title>
+  </head>
+  <body>
+    <ul class="nav-bar">
+          <li><a href="">Home |</a></li>
+          <li><a href="">Contacto |</a></li>
+          <li><a href="">Preguntas frecuentes |</a></li>
+          <li><a href="">Escribinos |</a></li>
+      </ul>
+  </body>
+</html>
+
+<!-- 
+Queremos que el <div> con clase "contenedor" se convierta en un flex-container. Pero atención: cada una de las cajas ya tiene un ancho definido y queremos que el contenedor respete ese ancho.
+Deberemos asignarle las propiedades necesarias a la clase "contenedor" para poder lograr ese objetivo.
+-->
+
+<html>
+  <head>
+    <title>Flexbox</title>
+  </head>
+  <body>
+    <div class="contenedor">
+        <div class="caja-1">Caja 1</div>
+        <div class="caja-2">Caja 2</div>
+        <div class="caja-3">Caja 3</div>
+        <div class="caja-4">Caja 4</div>
+        <div class="caja-5">Caja 5</div>
+        <div class="caja-6">Caja 6</div>
+    </div>
+  </body>
+</html>
+
+<!-- 
+  Como podemos observar, en la estructura HTML quedó la imagen de HomeroSapien arriba de todo. Necesitamos, utilizando una regla de CSS, asignarle un nuevo orden a la imagen con clase "sapiens-5" para que la misma pase a ocupar el último lugar y se ordene la secuencia evolutiva de Homeros.
+-->
+
+<html>
+  <head>
+    <title>Flexbox</title>
+  </head>
+  <body>
+    <div class="homero-sapiens">
+
+        <img class="sapiens-5" src="https://i.imgur.com/f891qhc.jpg">
+
+        <img class="sapiens-1" src="https://i.imgur.com/ogxb6OU.jpg">
+
+        <img class="sapiens-2" src="https://i.imgur.com/Egt5qy7.jpg">
+
+        <img class="sapiens-3" src="https://i.imgur.com/iwkd7AX.jpg">
+
+        <img class="sapiens-4" src="https://i.imgur.com/glXlrug.jpg">
+        
+    </div>
+  </body>
+</html>
+
+<!-- 
+  Queremos, usando la regla order, ubicar a la tabla de surf adelante de todo. ¿Qué valor tenemos que asignarle?
+-->    
+
+<html>
+  <head>
+    <title>Flexbox</title>
+  </head>
+  <body>
+     <div class="surf-en-el-mar">
+        <img src="https://i.imgur.com/RGqQuPS.png">
+        <img src="https://i.imgur.com/sf76emp.png"> 
+        <img class="tabla" src="https://i.imgur.com/k4qubEK.png">
+    </div>
+  </body>
+</html>
+
+<!-- 
+  Nuestro desafío será situar la imagen de la pieza de Tetris abajo de todo del contenedor.
+-->
+
+<html>
+  <head>
+    <title>Flexbox</title>
+  </head>
+  <body>
+    <div class="tetris">
+        <img class="pieza-tetris" src="https://i.imgur.com/C5mVK8n.png">
+    </div>
+  </body>
+</html>
+
