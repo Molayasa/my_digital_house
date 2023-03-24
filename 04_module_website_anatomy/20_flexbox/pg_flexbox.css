@@ -1,0 +1,83 @@
+.frase-cortazar {
+  display: flex;
+  flex-direction: column-reverse;
+  
+  }
+
+ /*______________________________________________________________________*/ 
+
+ .frase {
+  display: flex;
+  width: 350px;
+  flex-direction: row-reverse;
+}
+
+ /*______________________________________________________________________*/ 
+
+ .nav-bar {
+  display: flex;
+  justify-content: space-around
+}
+
+.enlaces {
+  display: flex;
+}
+
+ /*______________________________________________________________________*/ 
+
+ .juego-dardos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+ /*______________________________________________________________________*/ 
+
+  .nav-bar {
+    display: flex;
+}
+
+ /*______________________________________________________________________*/ 
+
+ .contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  }
+
+/*___________________________________________________________________________*/
+
+.homero-sapiens {
+  display: flex;
+  width: 50%;
+}
+
+.sapiens-5 {
+order: 1;
+}
+
+/*___________________________________________________________________________*/
+
+.surf-en-el-mar {
+  display: flex;
+  width: 100%;
+}
+
+.tabla {
+order: -2
+}
+
+/*___________________________________________________________________________*/
+
+.tetris {
+  display: flex;
+}
+
+.pieza-tetris {
+ align-self: flex-end;
+}
+
+/*___________________________________________________________________________*/
+
+
+
+
