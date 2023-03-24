@@ -1,0 +1,117 @@
+<!-- 
+      Nuestro trabajo será agregarles a estas cajas propiedades de CSS que solo entiendan los elementos de bloque. Estas son las características que deberán tener:
+
+        Ancho fijo de 100px
+        Borde sólido rojo de 1px
+        Padding de 5px
+        Margen de 10px
+
+    Por último, queremos que el ancho final de cada <div> sea de 100px incluyendo el borde. ¿Con qué propiedad podemos configurar eso?
+-->
+
+<html>
+  <head>
+    <title>Box Model</title>
+  </head>
+  <body>
+    <div>
+        Caja 1
+    </div>
+    <div>
+        Caja 2
+    </div>
+  </body>
+</html>
+
+<!-- 
+  Estas son las características que queremos que tenga cada uno de esos elementos:
+
+Para el <header>:
+
+    Color de fondo "lightseagreen"
+    Tipografía blanca
+    Tamaño de fuente: 28px
+    Un borde inferior sólido de 3px de color indigo
+    Padding de 22px
+    Un margen de 15px abajo, para separar el header de la sección principal
+    Texto centrado
+    No olvidar el box sizing
+
+Para la <section>:
+
+    Ancho del 50% de su contenedor
+    Margen a la izquierda del 25%
+    Color de fondo "gainsboro"
+    Margen de 15px abajo, para separarlo del footer
+    Padding de 12px a la izquierda
+    Padding de 30px arriba y abajo
+    Borde negro rayado (dashed) de 1px
+    Probemos agregar la regla border-radius:5px para evidenciar qué hace
+    Texto centrado
+    No olvidar el box sizing
+
+Para el <footer>:
+
+    Color de fondo "rebeccapurple"
+    Tipografía blanca
+    Un borde superior sólido de 1 px de color "lightseagreen"
+    Padding de 12px
+    Un alto fijo de 40px
+    Texto centrado
+    No olvidar el box sizing
+
+Es un ejercicio algo largo, pero vale la pena ver el resultado al que se puede llegar combinando reglas de CSS.
+-->
+
+<html>
+  <head>
+    <title>Elementos de bloque</title>
+  </head>
+  <body>
+    <header>Maquetación de sitios webs</header>
+
+    <section>HTML + CSS + JS</section>
+
+    <footer>No dudes en contactarnos</footer>
+  </body>
+</html>
+
+<!--
+De ahora en adelante empezaremos a maquetar nuestros sitios webs para que se adapten a todos los dispositivos.
+Para eso, lo primero que deberemos hacer, en el index.html, es configurar la etiqueta necesaria para decirle al navegador que vamos a maquetar un sitio responsive y que queremos que se ajuste perfectamente a cualquier resolución de pantalla.
+
+¿No recordamos cómo hacerlo? ¡Antes de revisar la pista de abajo los invitamos a googlear la respuesta!
+-->
+
+<html>
+  <head>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viewport</title>
+  </head>
+  <body>
+    <marquee>¡Primeros pasos en el diseño web responsive!</marquee>
+  </body>
+</html>
+
+<!-- 
+En index.html ya tenemos configurado un sitio para que sea responsive. Es momento de empezar a jugar con las medidas vh y vw.
+ Para eso, queremos que:
+
+ El <div> con clase "arriba" ocupe el 40% del alto del viewport
+ El <div> con clase "abajo" ocupe el alto restante, de forma tal que ambos ocupen el 100% del alto del viewport
+Ambos ocupen el 100% del ancho del body
+-->
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+      <div class="arriba">
+        <p>ARRIBA</p>
+      </div>
+      <div class="abajo">
+        <p>ABAJO</p>
+      </div>
+  </body>
+</html>
+
