@@ -1,0 +1,75 @@
+p {
+  color: red;
+}
+
+h3 {
+  color: blue;
+}
+
+.negrita {
+  font-weight: bold;
+}
+
+#gigante {
+  font-size: 40px;
+}
+
+/*______________________________________________________________________*/
+
+h3 {
+  color: blue;
+}
+
+.negrita {
+  font-weight: bold;
+}
+
+#gigante {
+  font-size: 40px;
+}
+
+/*______________________________________________________________________*/
+
+.destacado {
+  color: gold;
+}
+
+.en-mayuscula {
+  text-transform: uppercase;
+}
+
+#whatsapp {
+  background-color: green;
+  color: white;
+}
+
+/*______________________________________________________________________*/
+
+p {
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+  text-align: center;
+}
+
+/*______________________________________________________________________*/
+
+body {
+  background-image: URL('https://images3.alphacoders.com/621/621682.jpg');
+  background-size: cover;
+}
+
+h1 {
+background-color: rgba(0, 0, 0, 0.8);
+color: #f4e033;
+}
+
+h2 {
+background-color: orange;
+color: white;
+opacity: 0.4;
+}
+
+
