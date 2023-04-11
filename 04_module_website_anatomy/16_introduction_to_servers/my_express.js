@@ -20,11 +20,12 @@ app.get("/", (req, res) => {
 });
 
 app.get("/art", (req, res) => {
+  
   res.send("This is the Art section");
 });
 
 app.post("/art", (req, res) => {
-  res.send("This is the Art section postt");
+  res.send("This is the Art section post");
 });
 
 app.get("/product/add", (req, res) => {
