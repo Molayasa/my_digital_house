@@ -1,0 +1,16 @@
+{
+  "name": "int-ejs",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "ejs": "~2.6.1",
+    "express": "~4.16.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
